@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* when we click any navbar it will make an under line in the corresponding navlink 
+active is a class which is normally hidden but when we click any navbar will be activated
+*/
+a.active hr{
+    display: block;
+}
