@@ -10,12 +10,15 @@ import Login from './pages/Login'
 import PlaceOrder from './pages/PlaceOrder'
 import Orders from './pages/Orders'
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
+import SearchBar from './components/Searchbar'
 
 
 const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
       <NavBar/> 
+      <SearchBar/>
        {/* //outside the routes because it will be displayed in the all pages */}
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -28,6 +31,7 @@ const App = () => {
         <Route path='/place-order' element={< PlaceOrder/>}/>
         <Route path='/orders' element={<Orders/>}/>
       </Routes>
+      <Footer/>
     </div>
   )
 }
